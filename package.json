@@ -4,8 +4,9 @@
   "description": "Super simple and super awesome link url redirector that just works.",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "test-dev": "jest --coverage --coverageReporters=text-lcov",
+    "test": "npm run jest-lcov | coveralls",
+    "jest": "jest --config jest.config.js",
+    "jest-lcov": "npm run jest && cat ./coverage/lcov.info",
     "jsdoc": "jsdoc -c jsdoc.config.js"
   },
   "repository": {
