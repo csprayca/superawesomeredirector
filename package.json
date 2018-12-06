@@ -1,0 +1,50 @@
+{
+  "name": "superawesomeredirector",
+  "version": "1.0.0",
+  "description": "Super simple and super awesome link url redirector that just works.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "jsdoc": "jsdoc -c jsdoc.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/csprayca/superawesomeredirector.git"
+  },
+  "keywords": [
+    "link",
+    "redirector",
+    "redictor",
+    "simple",
+    "routes",
+    "simple",
+    "redirector",
+    "middleware",
+    "express",
+    "social"
+  ],
+  "author": "Alex Kluew <info@getaclue.me> (https://cspray.ca)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/csprayca/superawesomeredirector/issues"
+  },
+  "homepage": "https://github.com/csprayca/superawesomeredirector#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-do-expressions": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
+    "standard": "^12.0.1",
+    "supertest": "^3.3.0"
+  }
+}
