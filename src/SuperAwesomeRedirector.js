@@ -76,13 +76,13 @@ const SuperAwesomeRedirector = ({
 
   if (data[0].toURL === undefined) {
     throw new Error(
-      `SuperAwesomeRedirector needs data array of json item needs toURL attribute. This is where you want to send your visor. For example, { toURL : "https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg" }`
+      `SuperAwesomeRedirector needs data array of json item needs toURL attribute. This is where you want to send your visor. For example, { toURL : 'https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg' }`
     );
   }
 
   if (data[0].fromURL === undefined) {
     throw new Error(
-      `SuperAwesomeRedirector needs data array of json item needs fromURL attribute. This is the link that you share with your visitor. For example, { fromURL: '/onyoutube' }`
+      `SuperAwesomeRedirector needs data array of json item needs fromURL attribute. This is the link that you share with your visitor. For example, { fromURL: '/youtube' }`
     );
   }
 

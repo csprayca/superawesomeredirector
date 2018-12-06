@@ -75,7 +75,7 @@ describe('SuperAwesomeRedirector', () => {
     });
 
     test(`it throws an error if data's first item missing toURL`, () => {
-      const expectedErrMsg = `SuperAwesomeRedirector needs data array of json item needs toURL attribute. This is where you want to send your visor. For example, { toURL : "https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg" }`;
+      const expectedErrMsg = `SuperAwesomeRedirector needs data array of json item needs toURL attribute. This is where you want to send your visor. For example, { toURL : 'https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg' }`;
 
       expect(() => {
         let serv = jest.fn(() => Promise.resolve());
@@ -88,7 +88,7 @@ describe('SuperAwesomeRedirector', () => {
     });
 
     test(`it throws an error if data's first item is missing fromURL`, () => {
-      const expectedErrMsg = `SuperAwesomeRedirector needs data array of json item needs fromURL attribute. This is the link that you share with your visitor. For example, { fromURL: '/onyoutube' }`;
+      const expectedErrMsg = `SuperAwesomeRedirector needs data array of json item needs fromURL attribute. This is the link that you share with your visitor. For example, { fromURL: '/youtube' }`;
 
       expect(() => {
         let serv = jest.fn(() => Promise.resolve());
@@ -112,7 +112,7 @@ describe('SuperAwesomeRedirector', () => {
         {
           title: 'Youtube',
           toURL: 'https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg',
-          fromURL: '/onyoutube'
+          fromURL: '/youtube'
         }
       ];
 
