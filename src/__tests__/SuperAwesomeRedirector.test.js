@@ -16,7 +16,6 @@ const superAwesomeApp = () => {
 describe('SuperAwesomeRedirector', () => {
   describe('given invalid input to module', () => {
     test('it throws an error by default when everything is missing', () => {
-      const expectedErrMsg = `Cannot read property 'expressServ' of undefined`;
       const expectedErrMsg002 =
         "Cannot destructure property `expressServ` of 'undefined' or 'null'";
 

@@ -13,4 +13,9 @@ jobs:
     - stage: Produce Coverage
       node_js: node
       script:
-        - npm run test:all
+        - npm run test:full
+      after_success:
+        - npm run travis-deploy-once "npm run semantic-release"
+      branches:
+        except:
+          - /^v\d+\.\d+\.\d+$/
