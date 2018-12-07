@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run jest",
     "test:coveralls": "cat coverage/lcov.info | coveralls",
-    "test:all": "npm run test && npm run test:coveralls",
+    "test:codecov": "cat coverage/lcon.info | codecov",
+    "test:all": "npm run test && npm run test:coveralls && npm run test:codecov",
     "jest": "jest --config jest.config.js",
     "jsdoc": "jsdoc -c jsdoc.config.js"
   },
@@ -42,6 +43,7 @@
     "@babel/preset-env": "^7.2.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
+    "codecov": "^3.1.0",
     "coveralls": "^3.0.2",
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
