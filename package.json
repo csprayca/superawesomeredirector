@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "npm run jest",
-    "test:coveralls": "cat coverage/lcov.info | coveralls",
-    "test:codecov": "cat coverage/lcon.info | codecov",
+    "test:coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test:codecov": "cat ./coverage/lcon.info | codecov",
     "test:all": "npm run test && npm run test:coveralls && npm run test:codecov",
     "test:full:dev": "npm run lint && npm run test",
     "test:full": "npm run lint && npm run test:all",
