@@ -126,5 +126,48 @@ describe('SuperAwesomeRedirector', () => {
       expect(res.status).toEqual(EXPECTED_RESPONSE_STATUS);
       expect(res.header.location).toEqual(links[0].toURL);
     });
+
+    test('it shows default logs on setup', async () => {
+      const app = superAwesomeApp();
+      const links = [
+        {
+          title: 'Youtube',
+          toURL: 'https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg',
+          fromURL: '/youtube'
+        }
+      ];
+
+      global.console = {
+        log: jest.fn()
+      };
+
+      SuperAwesomeRedirector({ expressServ: app, data: links });
+      await request(app).get(links[0].fromURL);
+
+      expect(console.log).toHaveBeenCalledTimes(3);
+    });
+
+    test('it hides default logs on setup', async () => {
+      const app = superAwesomeApp();
+      const links = [
+        {
+          title: 'Youtube',
+          toURL: 'https://www.youtube.com/channel/UCB5mFx3KjuOuMZoXDLSUvSg',
+          fromURL: '/youtube'
+        }
+      ];
+
+      global.console = { log: jest.fn() };
+
+      SuperAwesomeRedirector({
+        expressServ: app,
+        data: links,
+        verbose: false,
+        log: false
+      });
+      await request(app).get(links[0].fromURL);
+
+      expect(console.log).toHaveBeenCalledTimes(0);
+    });
   });
 });
