@@ -1,6 +1,6 @@
 {
   "name": "superawesomeredirector",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Super simple and super awesome link url redirector that just works.",
   "main": "main.js",
   "scripts": {

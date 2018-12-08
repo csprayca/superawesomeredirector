@@ -1,8 +1,7 @@
-module.exports = {
-  testPathIgnorePatterns: [
-    '<rootDir>/node_modules/',
-    '<rootDir>/routes/redirector'
-  ],
+'use strict';
+
+exports = module.exports = {
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/coverage/'],
   bail: true,
   verbose: true,
   collectCoverage: true
